@@ -1,7 +1,17 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
-footer {
-  font-size: 14px;
-}
+ :root {--primary-color: #2e8b57;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ffc107;}
+        
+        body { padding-top: 56px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        
+        .section-title {border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin: 30px 0;
+            color: var(--primary-color);}
+        
+        .btn-primary {background-color: var(--primary-color);
+            border-color: var(--primary-color);}
+        
+        .btn-primary:hover {background-color: #267349;
+            border-color: #267349;}
