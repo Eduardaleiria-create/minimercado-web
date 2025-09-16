@@ -1,0 +1,51 @@
+<div class="modal fade" id="agendamentoModal" tabindex="-1" aria-labelledby="agendamentoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agendamentoModalLabel">Agendamento de Entrega/Retirada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="agendamentoForm">
+                        <div class="mb-3">
+                            <label for="tipoServico" class="form-label">Tipo de Serviço</label>
+                            <select class="form-select" id="tipoServico" required>
+                                <option value="" selected disabled>Selecione...</option>
+                                <option value="entrega">Tele-entrega</option>
+                                <option value="retirada">Retirada no Local</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dataAgendamento" class="form-label">Data</label>
+                            <input type="date" class="form-control" id="dataAgendamento" required min="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="horaAgendamento" class="form-label">Horário</label>
+                            <select class="form-select" id="horaAgendamento" required>
+                                <option value="" selected disabled>Selecione...</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="observacoes" class="form-label">Observações</label>
+                            <textarea class="form-control" id="observacoes" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="confirmarAgendamento">Confirmar Agendamento</button>
+                </div>
+            </div>
+        </div>
+    </div>
