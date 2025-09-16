@@ -1,0 +1,19 @@
+ .accessibility-bar {
+            background-color: #333;
+            color: white;
+            padding: 5px 0;
+            font-size: 0.9rem;
+        }
+        
+        .high-contrast {
+            background-color: black !important;
+            color: white !important;
+        }
+        
+        .high-contrast-text {
+            color: white !important;
+        }
+        
+        .high-contrast-border {
+            border-color: white !important;
+        }
