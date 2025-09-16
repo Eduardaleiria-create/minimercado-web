@@ -1,0 +1,142 @@
+<section id="cadastro" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Cadastro de Cliente</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="customerForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nome" class="form-label required-field">Nome completo</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe seu nome.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cpf" class="form-label required-field">CPF</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CPF válido.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label required-field">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                            <div class="invalid-feedback">
+                                Por favor, informe um e-mail válido.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="telefone" class="form-label required-field">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um telefone válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label required-field">Sexo</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino" required>
+                                        <label class="form-check-label" for="masculino">Masculino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="feminino" value="feminino">
+                                        <label class="form-check-label" for="feminino">Feminino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="outro" value="outro">
+                                        <label class="form-check-label" for="outro">Outro</label>
+                                    </div>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione uma opção.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="endereco" class="form-label required-field">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Rua, número, bairro" required>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu endereço.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cidade" class="form-label required-field">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe sua cidade.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="estado" class="form-label required-field">Estado</label>
+                                <select class="form-select" id="estado" required>
+                                    <option value="" selected disabled>Selecione...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione seu estado.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Desejo receber promoções por e-mail
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termos" required>
+                                <label class="form-check-label" for="termos">
+                                    Aceito os termos e condições de uso
+                                </label>
+                                <div class="invalid-feedback">
+                                    Você deve aceitar os termos antes de enviar.
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Finalizar Cadastro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
