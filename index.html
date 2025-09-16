@@ -9,62 +9,48 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
-        /* ESTILOS GERAIS */
         :root {
             --primary-color: #2e8b57;
             --secondary-color: #f8f9fa;
             --accent-color: #ffc107;
         }
-        
         body {
             padding-top: 56px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
         .section-title {
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 10px;
             margin: 30px 0;
             color: var(--primary-color);
         }
-        
         .btn-primary {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
         }
-        
         .btn-primary:hover {
             background-color: #267349;
             border-color: #267349;
         }
-        
-        /* BARRA DE ACESSIBILIDADE */
         .accessibility-bar {
             background-color: #333;
             color: white;
             padding: 5px 0;
             font-size: 0.9rem;
         }
-        
         .high-contrast {
             background-color: black !important;
             color: white !important;
         }
-        
         .high-contrast-text {
             color: white !important;
         }
-        
         .high-contrast-border {
             border-color: white !important;
         }
-        
-        /* NAVEGAÇÃO */
         .navbar {
             background-color: var(--primary-color) !important;
         }
-        
-        /* CARROSSEL */
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
@@ -74,30 +60,23 @@
             display: flex;
             align-items: center;
         }
-        
         .carousel-caption {
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
-        
-        /* PRODUTOS */
         .product-card {
             transition: transform 0.3s;
             margin-bottom: 20px;
             height: 100%;
         }
-        
         .product-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        
         .product-img {
             height: 200px;
             object-fit: cover;
         }
-        
-        /* SERVIÇOS */
         .service-card {
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -105,32 +84,24 @@
             margin-bottom: 20px;
             transition: all 0.3s;
         }
-        
         .service-card:hover {
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        
         .feature-icon {
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 15px;
         }
-        
-        /* FORMULÁRIO */
         .required-field::after {
             content: " *";
             color: red;
         }
-        
-        /* RODAPÉ */
         footer {
             background-color: var(--primary-color);
             color: white;
             padding: 30px 0;
             margin-top: 50px;
         }
-        
-        /* RELÓGIO */
         #clock {
             font-size: 1.2rem;
             font-weight: bold;
@@ -173,21 +144,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#products">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline-light btn-sm ms-2" href="#cadastro">
                             <i class="bi bi-person"></i> Cadastre-se
@@ -238,3 +199,122 @@
             </div>
         </div>
     </header>
+
+    <!-- Seção Produtos -->
+    <section id="products" class="container">
+        <h2 class="section-title">Produtos</h2>
+        <div class="row">
+            <!-- Exemplo de produto -->
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top product-img" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produto 1</h5>
+                        <p class="card-text">Descrição do produto 1.</p>
+                        <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="container">
+        <h2 class="section-title">Serviços</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <div class="feature-icon"><i class="bi bi-truck"></i></div>
+                    <h5>Entrega Expressa</h5>
+                    <p>Entregamos em até 24h na sua região.</p>
+                </div>
+            </div>
+            <!-- Adicione mais serviços conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="container">
+        <h2 class="section-title">Sobre</h2>
+        <p>O SuperMarket é seu minimercado online de confiança, oferecendo praticidade, segurança e os melhores preços para você e sua família.</p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label required-field">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label required-field">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label required-field">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seção Cadastro -->
+    <section id="cadastro" class="container">
+        <h2 class="section-title">Cadastre-se</h2>
+        <form>
+            <div class="mb-3">
+                <label for="cadastro-nome" class="form-label required-field">Nome</label>
+                <input type="text" class="form-control" id="cadastro-nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="cadastro-email" class="form-label required-field">Email</label>
+                <input type="email" class="form-control" id="cadastro-email" required>
+            </div>
+            <div class="mb-3">
+                <label for="cadastro-senha" class="form-label required-field">Senha</label>
+                <input type="password" class="form-control" id="cadastro-senha" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2025 SuperMarket. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para relógio e acessibilidade -->
+    <script>
+        // Relógio
+        function updateClock() {
+            const now = new Date();
+            const clock = document.getElementById('clock');
+            clock.textContent = now.toLocaleTimeString('pt-BR');
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Acessibilidade: alto contraste
+        document.getElementById('contrast-btn').onclick = function() {
+            document.body.classList.toggle('high-contrast');
+        };
+        // Acessibilidade: aumentar/reduzir fonte
+        let fontSize = 16;
+        document.getElementById('font-increase').onclick = function() {
+            fontSize += 2;
+            document.body.style.fontSize = fontSize + 'px';
+        };
+        document.getElementById('font-decrease').onclick = function() {
+            fontSize -= 2;
+            if(fontSize < 10) fontSize = 10;
+            document.body.style.fontSize = fontSize + 'px';
+        };
+    </script>
+</body>
+</html>
