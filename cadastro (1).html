@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - MiniMercado Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container my-4">
+  <h2>Cadastro de Cliente</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="cpf" class="form-label">CPF:</label>
+      <input type="number" id="cpf" name="cpf" class="form-control" placeholder="Somente números" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail:</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="telefone" class="form-label">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(XX) XXXXX-XXXX">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Sexo:</label><br>
+      <input type="radio" id="masc" name="sexo" value="M"> <label for="masc">Masculino</label>
+      <input type="radio" id="fem" name="sexo" value="F"> <label for="fem">Feminino</label>
+    </div>
+
+    <div class="mb-3">
+      <label for="servico" class="form-label">Serviço:</label>
+      <select id="servico" name="servico" class="form-select">
+        <option value="retirada">Retirada no Local</option>
+        <option value="entrega">Tele-entrega</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="data" class="form-label">Data de Agendamento:</label>
+      <input type="date" id="data" name="data" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="hora" class="form-label">Horário:</label>
+      <input type="time" id="hora" name="hora" class="form-control" required>
+    </div>
+
+    <div class="form-check mb-3">
+      <input type="checkbox" id="termos" class="form-check-input" required>
+      <label for="termos" class="form-check-label">Aceito os termos e condições</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
