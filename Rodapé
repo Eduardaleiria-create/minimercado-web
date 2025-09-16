@@ -1,1 +1,32 @@
 <p>Desenvolvido por Maria Eduarda de Moraes Leiria - 2025</p>
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>SuperMarket</h5>
+                    <p>Seu minimercado online com praticidade e qualidade.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#products" class="text-white">Produtos</a></li>
+                        <li><a href="#services" class="text-white">Serviços</a></li>
+                        <li><a href="#cadastro" class="text-white">Cadastro</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <div>
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <p class="mt-3">Desenvolvido por [Seu Nome]</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2023 SuperMarket - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
