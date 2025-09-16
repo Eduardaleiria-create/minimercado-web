@@ -1,0 +1,16 @@
+   <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Sobre o SuperMarket</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>O SuperMarket nasceu da necessidade de oferecer um serviço de qualidade para o abastecimento doméstico, com praticidade e preços justos.</p>
+                    <p>Nossa missão é simplificar a vida dos nossos clientes, oferecendo uma experiência de compra agradável e eficiente, seja através do nosso e-commerce ou em nossa loja física.</p>
+                    <p>Valorizamos a qualidade dos produtos, o atendimento personalizado e a pontualidade nas entregas.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1566842600175-97dca3dfc3c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="img-fluid rounded" alt="Interior do SuperMarket, mostrando corredores limpos e organizados com produtos">
+                </div>
+            </div>
+        </div>
+    </section>
+
